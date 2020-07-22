@@ -1,6 +1,5 @@
 package com.api.desconto.services;
 
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.api.desconto.dto.DescontoDTO;
@@ -13,5 +12,9 @@ public class DescontoService {
         return descontoDTO;
     }
 
+    public int calcularDesc (int desconto) {
+
+        return desconto;
+    }
 
 }
