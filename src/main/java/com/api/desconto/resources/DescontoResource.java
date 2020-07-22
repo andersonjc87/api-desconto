@@ -13,12 +13,12 @@ public final class DescontoResource {
 
     @Autowired
     private DescontoService descontoService;
-    private Object DescontoDTO;
+    private DescontoDTO descontoDTO;
 
     @ResponseBody
     @GetMapping(path = "/parcela/valor")
-    public ResponseEntity<?> compraDesconto(@DescontoDTO dto) {
-        DescontoDTO descontoDTO = descontoService.calcularValor(DescontoDTO dto);
+    public ResponseEntity<?> compraDesconto(DescontoDTO dto) {
+        DescontoDTO descontoDTO = descontoService.calcularValor(dto);
 
         if (dto == null) {
             return ResponseEntity.noContent()

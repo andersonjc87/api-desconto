@@ -8,9 +8,9 @@ import com.api.desconto.dto.DescontoDTO;
 @Service
 public class DescontoService {
 
-    public DescontoDTO calcularValor(Pageable pageable) {
+    public DescontoDTO calcularValor(DescontoDTO descontoDTO) {
 
-        return pessoa.map(pessoas -> new DescontoDTO(pessoas));
+        return descontoDTO;
     }
 
 
